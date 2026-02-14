@@ -1,0 +1,20 @@
+if SHIELD_CRN_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne CRN"
+
+# The left side is the central/master side
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CRN_LEFT || SHIELD_CRN_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+# Studio ist DEAKTIVIERT für einfachen Build
+# Später kannst du es aktivieren wenn du willst
+
+endif
