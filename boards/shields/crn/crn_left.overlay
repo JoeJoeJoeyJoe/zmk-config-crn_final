@@ -1,13 +1,7 @@
 #include "crn.dtsi"
 
 &kscan0 {
-    // Left Half Columns as soldered:
-    // Col 0: Pin 2
-    // Col 1: Pin 7
-    // Col 2: Pin 6
-    // Col 3: Pin 5
-    // Col 4: Pin 4
-    // Col 5: Pin 3
+    // Left Half Columns - REVERSED order to fix mirroring
     col-gpios
         = <&pro_micro 3 GPIO_ACTIVE_HIGH>
         , <&pro_micro 4 GPIO_ACTIVE_HIGH>

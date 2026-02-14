@@ -5,19 +5,13 @@
 };
 
 &kscan0 {
-    // Right Half Columns as soldered:
-    // Col 0: Pin 3
-    // Col 1: Pin 4
-    // Col 2: Pin 5
-    // Col 3: Pin 6
-    // Col 4: Pin 7
-    // Col 5: Pin 2
+    // Right Half Columns - REVERSED order to fix mirroring
     col-gpios
-        = <&pro_micro 3 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 2 GPIO_ACTIVE_HIGH>
         , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 2 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 6 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 5 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 4 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 3 GPIO_ACTIVE_HIGH>
         ;
 };
